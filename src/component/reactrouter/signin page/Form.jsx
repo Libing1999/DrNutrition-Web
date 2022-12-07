@@ -1,28 +1,7 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import { Link } from "react-router-dom";
 export default function Form() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
       <div className="flex min-h-full">
         <div className="flex flex-1 flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
@@ -41,7 +20,7 @@ export default function Form() {
                   className="font-bold text-3xl text-[#67327E]
               "
                 >
-                  SIGN IN
+                  <Link to="signin/home">SIGN IN</Link>
                 </h1>
                 <form action="#" method="POST" className="space-y-5 ">
                   <div className="space-y-2">
@@ -93,9 +72,9 @@ export default function Form() {
                   <div>
                     <button
                       type="button"
-                      className="inline-flex items-center w-32 rounded-xl border border-transparent bg-[#67327E] px-9 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      className="inline-flex items-center w-32 rounded-xl border border-transparent bg-[#67327E] px-9 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2  focus:ring-offset-2"
                     >
-                      Sign In
+                      <Link to="signin/home"> Sign In</Link>
                     </button>
                   </div>
                   <div className="relative">
@@ -111,11 +90,6 @@ export default function Form() {
                       </span>
                     </div>
                   </div>
-                  {/* <div className="w-full border-t border-gray-300" /> */}
-
-                  {/* <div className="relative flex justify-center text-sm">
-                    <span className="bg-white px-2 text-[#202A39]"></span>
-                  </div> */}
 
                   <div>
                     <div className="mt-1 flex flex-inline gap-3 ">
@@ -143,27 +117,16 @@ export default function Form() {
                           />
                         </a>
                       </div>
-
-                      {/* <h3>Google</h3> */}
-                      {/* <svg
-                            className="h-5 w-5"
-                            aria-hidden="true"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
-                              clipRule="evenodd"
-                            />
-                          </svg> */}
                     </div>
                   </div>
                   <div>
                     <h1 className="text-[#202A39]">
                       New to DrNutrition?
                       <span className="text-[#699424] hover:text-[#202A39]">
-                        <a href="#"> Register Now</a>
+                        <Link to="/">
+                          {" "}
+                          <a href="#"> Register Now</a>
+                        </Link>
                       </span>
                     </h1>
                   </div>
