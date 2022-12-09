@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import MainPage from "./subcontent1/MainPage";
-
+import { Link } from "react-router-dom";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -67,12 +67,14 @@ export default function MainContent() {
                 </div>
               </div>
 
-              <button
-                type="button"
-                className="inline-flex items-center rounded-full md:rounded-xl border border-transparent w-20 md:w-32 mt-2 h-12 md:h-12 bg-[#67327E] md:px-11 px-5 md:mt-2  py-2 text-base font-medium text-[#FFFFFF] shadow-sm "
-              >
-                Login
-              </button>
+              <Link to="signin">
+                <button
+                  type="button"
+                  className="inline-flex items-center rounded-full md:rounded-xl border border-transparent w-20 md:w-32 mt-2 h-12 md:h-12 bg-[#67327E] md:px-11 px-5 md:mt-2  py-2 text-base font-medium text-[#FFFFFF] shadow-sm "
+                >
+                  Login
+                </button>
+              </Link>
             </div>
           </div>
 

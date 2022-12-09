@@ -103,7 +103,7 @@ export default function LogForm() {
               <div className="absolute inset-y-0 right-0 flex items-center mt-1 md:mt-3 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="inline-flex items-center rounded-xl border border-transparent w-20 md:w-32 md:h-12  bg-[#67327E] md:px-11 px-5 md:mt-9  py-2 text-base font-medium text-[#FFFFFF] shadow-sm "
+                  className="inline-flex hidden items-center rounded-xl border border-transparent w-20 md:w-32 md:h-12  bg-[#67327E] md:px-11 px-5 md:mt-9  py-2 text-base font-medium text-[#FFFFFF] shadow-sm "
                 >
                   Login
                 </button>

@@ -107,14 +107,17 @@ export default function RegistrationForm() {
                     </a>
                   ))}
                 </div>
-                <div className="mt-6 px-5">
-                  <a
-                    href="#"
-                    className="bg-[#67327E] block w-full rounded-md border border-transparent bg-grape-500 py-2 px-4 text-center font-medium text-white shadow hover:bg-grape-600"
-                  >
-                    Login
-                  </a>
-                </div>
+                <Link to="signin">
+                  {" "}
+                  <div className="mt-6 px-5">
+                    <a
+                      href="#"
+                      className="bg-[#67327E] block w-full rounded-md border border-transparent bg-grape-500 py-2 px-4 text-center font-medium text-white shadow hover:bg-grape-600"
+                    >
+                      Login
+                    </a>
+                  </div>
+                </Link>
               </div>
             </div>
           </Popover.Panel>

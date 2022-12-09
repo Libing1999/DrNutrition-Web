@@ -70,12 +70,14 @@ export default function Form() {
                   </div>
 
                   <div>
-                    <button
-                      type="button"
-                      className="inline-flex items-center w-32 rounded-xl border border-transparent bg-[#67327E] px-9 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2  focus:ring-offset-2"
-                    >
-                      <Link to="signin/home"> Sign In</Link>
-                    </button>
+                    <Link to="home">
+                      <button
+                        type="button"
+                        className="inline-flex items-center w-32 rounded-xl border border-transparent bg-[#67327E] px-9 py-3 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2  focus:ring-offset-2"
+                      >
+                        Sign In
+                      </button>
+                    </Link>
                   </div>
                   <div className="relative">
                     <div

@@ -1,11 +1,14 @@
 import React from "react";
-import { sideLogo } from "../../../logo/Logo";
 
 const SideBarBottom = () => {
   return (
     <div>
       <div className=" grid-flow-row justify-items-center ml-[35px] rounded-2xl  px-6 pb-4 bg-[#67327E] mt-20 w-[230px] h-[230px]">
-        <img className="h-[110px] w-auto  " src={sideLogo} alt="Your Company" />
+        <img
+          className="h-[110px] w-auto  "
+          src="./assets/foodimg.png"
+          alt="Your Company"
+        />
         <h3 className=" text-[#FFFFFF] mt-4 text-sm font-Ubuntu regular leading-4">
           DrNutrition App is now available on mobile devices.
         </h3>
