@@ -10,7 +10,7 @@ const SearchInput = () => {
   return (
     <div>
       <div className=" justify-center h-[1480px] bg-[#FAF9FB] w-[76rem] ml-[18.8rem] mt-[-100rem]">
-        <div className="ml-[-19.5rem]  ">
+        <div className=" ">
           <input
             type="search"
             name="search"
