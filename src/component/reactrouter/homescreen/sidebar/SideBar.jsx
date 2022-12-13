@@ -17,7 +17,6 @@ const navigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-
 export default function SideBar() {
   return (
     <div>
@@ -40,8 +39,7 @@ export default function SideBar() {
                       ? "bg-gray-100 text-[#AACA39]"
                       : "text-[#5E6E83] hover:bg-gray-50 hover:text-[#AACA39]",
                     "group flex items-center px-14 py-5 text-sm font-medium rounded-md"
-                  )}
-                >
+                  )}>
                   <item.icon
                     className={classNames(
                       item.current
@@ -59,8 +57,7 @@ export default function SideBar() {
                           ? "bg-white"
                           : "bg-gray-100 group-hover:bg-gray-200",
                         "ml-3 inline-block py-0.5 px-3 text-xs font-medium rounded-full"
-                      )}
-                    >
+                      )}>
                       {item.count}
                     </span>
                   ) : null}
@@ -71,7 +68,6 @@ export default function SideBar() {
           </nav>
         </div>
       </div>
-
       {/* <div className=" absolute inset-y-0 right-0  bg-white col-span-2  border-r border-gray-400 min-h-[90vh] w-[300px]"></div> */}
       <div className="absolute inset-y-0 right-0  bg-[#ffff] col-span-2  border-r border-gray-500 h-[350vh] w-[300px] mt-[-50rem]"></div>
     </div>
