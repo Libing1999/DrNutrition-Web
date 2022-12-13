@@ -47,8 +47,7 @@ const Content = () => {
             </p>
             <button
               type="button"
-              className="flex items-center w-[200px] px-4 py-2 mt-3 ml-3.5 border border-transparent text-base font-medium rounded-2xl shadow-sm text-[#67327E] bg-[#FFFFFF]  hover:bg-[#AACA39] hover:text-[#ffff] focus:outline-none "
-            >
+              className="flex items-center w-[200px] px-4 py-2 mt-3 ml-3.5 border border-transparent text-base font-medium rounded-2xl shadow-sm text-[#67327E] bg-[#FFFFFF]  hover:bg-[#AACA39] hover:text-[#ffff] focus:outline-none ">
               Book an Appoinment
             </button>
             <div className="flex  justify-end mt-[-170px]">
@@ -56,8 +55,7 @@ const Content = () => {
                 className="flex h-[175px] w-[141px]
              "
                 src="./assets/drimage.png"
-                alt="Dr Logo"
-              ></img>
+                alt="Dr Logo"></img>
             </div>
           </div>
         </div>
